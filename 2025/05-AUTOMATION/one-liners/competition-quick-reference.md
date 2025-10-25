@@ -233,18 +233,6 @@ done
 
 ---
 
-## Reporting
-
-### Create Finding + Upload Evidence Chain
-```bash
-# Create screenshot → Upload to GhostWriter → Create finding
-scrot screenshot.png && \
-python3 ~/ghostwriter_upload.py --file screenshot.png --finding-id 123 && \
-python3 ~/ghostwriter_create.py --template sql-injection --affected "http://TARGET/page.php"
-```
-
----
-
 ## Time-Savers
 
 ### Multi-Tool Web Enum
