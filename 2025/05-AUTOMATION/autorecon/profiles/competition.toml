@@ -1,0 +1,17 @@
+# Competition Profile
+
+[global.nmap]
+# Aggressive timing for speed
+timing = "-T4"
+
+# Include script scanning
+script_scanning = true
+
+[service-scans]
+# High concurrency for speed
+max_concurrent_scans = 50
+
+max_concurrent_port_scans = 10
+
+# Run comprehensive service enumeration
+comprehensive = true

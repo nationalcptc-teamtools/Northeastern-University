@@ -1,0 +1,22 @@
+# Safe Corporate Network Scan
+# Use this for simulated corporate environments
+
+[global.nmap]
+# Polite timing to avoid overwhelming services
+timing = "-T3"
+
+# Don't use aggressive OS detection
+os_detection = false
+
+# Reasonable port scan timing
+port_scan_delay = "100ms"
+
+[service-scans]
+# Limit concurrent scans to avoid network congestion
+max_concurrent_scans = 25
+
+# Limit concurrent port scans
+max_concurrent_port_scans = 5
+
+# Don't run overly aggressive service detection
+aggressive_service_detection = false
